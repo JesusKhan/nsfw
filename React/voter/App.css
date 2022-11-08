@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+  background-color: blue;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btn {
+  margin: 20px;
+  padding: 10px 20px;
+}
