@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" placeholder="date"/>
+    <input type="number" placeholder="month"/>
+    <input type="number" placeholder="year" id="year"/>
+    <button onclick="calculate()">Calculate</button>
+    <p id="age">Age is: </p>    
+</body>
+<script>
+    function calculate(){
+        var year = document.querySelector("#year").value;
+        var age = 2022 - year;
+        document.getElementById("age").innerHTML = "Age is: " + age;
+    }
+</script>
+</html>
