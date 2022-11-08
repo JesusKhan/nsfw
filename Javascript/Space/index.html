@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript Replace Multiple Spaces with Single Character</title>
+<script>
+    var myStr = 'The  quick brown fox';
+    document.write('<p>' + myStr + '</p>'); // Browser doesn't display multiple spaces
+    var newStr = myStr.split(' ').join('-');
+    document.write('<p>' + newStr + '</p>'); // Print 'The--quick-brown-fox'
+    
+    var myStr = myStr.replace(/  +/g, ' ');
+    document.write('<p>' + myStr + '</p>');
+    var newStr = myStr.split(' ').join('-');
+    document.write('<p>' + newStr + '</p>');  // Print 'The-quick-brown-fox'
+</script>
+</head> 
+<body>
+    <!--Strings printed here-->
+</body>
+</html>
